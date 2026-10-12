@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Faixa Labs</title>
+<meta name="description" content="Faixa Labs: apps simples para entrenar. Hechas en el tatami.">
+<style>
+  :root {
+    --bg: #111413; --fg: #e2e3e0; --muted: #a9b2ab; --card: #1c201e; --line: #2a2f2c;
+    --green: #2e7d32; --amber: #f9a825; --red: #c62828;
+  }
+  @media (prefers-color-scheme: light) {
+    :root { --bg: #f6f7f5; --fg: #151816; --muted: #5b635d; --card: #ffffff; --line: #e1e4e0; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; line-height: 1.55; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 56px 20px 40px; }
+  .belt { display: flex; height: 6px; border-radius: 3px; overflow: hidden; width: 120px; margin-bottom: 28px; }
+  .belt span { flex: 1; } .belt span:nth-child(1){background:var(--amber)} .belt span:nth-child(2){background:var(--green)} .belt span:nth-child(3){background:var(--red)}
+  h1 { font-size: clamp(2.4rem, 7vw, 3.6rem); line-height: 1.05; margin: 0 0 12px; letter-spacing: -0.02em; }
+  .lead { font-size: 1.15rem; color: var(--muted); margin: 0 0 48px; max-width: 34em; }
+  h2 { font-size: .8rem; text-transform: uppercase; letter-spacing: .12em; color: var(--muted); margin: 0 0 14px; }
+  .app { display: flex; gap: 18px; align-items: center; background: var(--card); border: 1px solid var(--line);
+         border-radius: 18px; padding: 18px; text-decoration: none; color: inherit; }
+  .app:hover { border-color: var(--green); }
+  .icon { flex: 0 0 64px; height: 64px; border-radius: 16px; background: #1b5e20; display: grid; place-items: center; }
+  .app h3 { margin: 0 0 2px; font-size: 1.15rem; }
+  .app p { margin: 0; color: var(--muted); font-size: .95rem; }
+  .links { margin-top: 6px; font-size: .9rem; }
+  .links a { color: var(--fg); }
+  footer { margin-top: 64px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
+  footer a { color: var(--fg); }
+</style>
+</head>
+<body>
+<main class="wrap">
+  <div class="belt" aria-hidden="true"><span></span><span></span><span></span></div>
+  <h1>Faixa Labs</h1>
+  <p class="lead">Apps simples para entrenar. Hechas en el tatami, para usarlas con los guantes puestos y el celular en el piso.</p>
+
+  <h2>Apps</h2>
+  <div class="app">
+    <div class="icon" aria-hidden="true">
+      <svg width="40" height="40" viewBox="0 0 108 108"><path fill="#fff" d="M47 27h14v5H47zM52 31h4v6h-4z"/><circle cx="54" cy="58" r="21" fill="none" stroke="#fff" stroke-width="6"/><path fill="#ffc107" d="M54 58V43a15 15 0 0 1 13 7.5z"/><path fill="#fff" d="M52 43h4v15h-4z"/></svg>
+    </div>
+    <div>
+      <h3>Tabata</h3>
+      <p>Timer de intervalos para jiu-jitsu, CrossFit y gimnasio: luchas, rondas y voz.</p>
+      <div class="links"><a href="/tabata/">Más info</a> · <a href="/tabata/privacidad.html">Privacidad</a></div>
+    </div>
+  </div>
+
+  <footer>
+    © 2026 Faixa Labs · <a href="mailto:info@faixalabs.com">info@faixalabs.com</a>
+  </footer>
+</main>
+</body>
+</html>
